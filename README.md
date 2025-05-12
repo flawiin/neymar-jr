@@ -1,6 +1,6 @@
 # Link Bio - Neymar Jr.
 
-![Preview do Projeto](.github/docs/preview.png)
+![Preview do Projeto](assets/docs/preview.png)
 
 ## 📋 Descrição
 
