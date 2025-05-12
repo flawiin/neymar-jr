@@ -155,3 +155,81 @@
     right: 393px;
 }
 
+.statistics {
+    background-image: url("../imagem/imagem-de-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistics__table {
+    text-align: center;
+    border-spacing: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.statistics__header, .statistics__data {
+    padding: 20px;
+}
+
+.statistics__tbody .statistics__row:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.statistics__tbody .statistics__row:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.statistics__thead .statistics__row {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.statistics__data--icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.statistics__data--icon::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.statistics__data--brasil::before {
+    background-image: url("../imagem/cbf.png");
+}
+
+.statistics__data--santos::before {
+    background-image: url("../imagem/santos.png");
+}
+
+.statistics__data--barcelona::before {
+    background-image: url("../imagem/barcelona.png");
+}
+
+.statistics__data--psg::before {
+    background-image: url("../imagem/psg.png");
+}
+
+.statistics__data--hilal::before {
+    background-image: url("../imagem/alhilal.png");
+}
+
+
+
+
+
