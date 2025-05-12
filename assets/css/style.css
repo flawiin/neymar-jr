@@ -169,6 +169,16 @@
     justify-content: center;
 }
 
+.statistics__title {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px #000000;
+    letter-spacing: 2px;
+}
+
 .statistics__table {
     text-align: center;
     border-spacing: 1;
