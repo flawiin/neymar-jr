@@ -21,7 +21,7 @@
 @keyframes fadeDown {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-1.25rem);
   }
   100% {
     opacity: 1;
@@ -31,16 +31,16 @@
 
 .banner__image {
     border-radius: 50%;
-    padding: 5px;
+    padding: 0.3125rem;
     background: linear-gradient(135deg, #ffdf00, #009c3b);
-    margin: 80px 0 20px 0;
+    margin: 5rem 0 1.25rem 0;
     animation: fadeDown 1s ease forwards;
 
 }
 
 .banner__photo {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -55,32 +55,32 @@
 
 .banner__title {
     color: #fff;
-    text-shadow: 3px 3px 5px #000000;
-    margin-bottom: 30px;
+    text-shadow: 0.1875rem 0.1875rem 0.3125rem #000000;
+    margin-bottom: 1.875rem;
     font-family: 'Ysabeau Infant', sans-serif;
     font-weight: 600;
     font-size: 2.375rem;
     animation: fadeDown 1s ease forwards;
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
 }
 
 .banner__title::before {
     content: "";
     display: block;
-    width: 45px;
-    height: 5px;
-    border-radius: 40px;
+    width: 2.8125rem;
+    height: 0.3125rem;
+    border-radius: 2.5rem;
     position: absolute;
-    top: 45px;
+    top: 2.8125rem;
     background: linear-gradient(135deg, #ffdf00, #009c3b);
 
 }
 
 .banner__title::after {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     background-image: url('../imagem/verificado.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,16 +89,16 @@
 }
 
 .banner__social-link {
-    max-width: 768px;
+    max-width: 48rem;
     width: 95%;
 }
 
 .social-link__item {
     list-style: none;
     text-align: center;
-    margin: 20px 0;
-    border-radius: 30px;
-    max-width: 768px;
+    margin: 1.25rem 0;
+    border-radius: 1.875rem;
+    max-width: 48rem;
     width: 100%;
 }
 
@@ -110,27 +110,27 @@
 
 .social-link__link {
     text-decoration: none;
-    padding: 20px;
+    padding: 1.25rem;
     font-family: 'Ysabeau Infant', sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 1.125rem;
     width: 100%;
     display: block;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     position: relative;
-    padding-left: 50px;
+    padding-left: 3.125rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .social-link__link::before {
     content: "";
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     background-size: cover;
     position: absolute;
-    left: 15px;
+    left: 0.9375rem;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -178,33 +178,33 @@
     color: #fff;
     font-size: 1.75rem;
     font-weight: 600;
-    margin-bottom: 40px;
-    text-shadow: 2px 2px 5px #000000;
-    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+    text-shadow: 0.125rem 0.125rem 0.3125rem #000000;
+    letter-spacing: 0.125rem;
 }
 
 .statistics__table-wrapper {
-    max-width: 768px;
+    max-width: 48rem;
     width: 95%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem;
     background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)), linear-gradient(to left, white 30%, rgba(255, 255, 255, 0)) 100% 0;
-    background-size: 50px 100%, 50px 100%;
+    background-size: 3.125rem 100%, 3.125rem 100%;
     background-repeat: no-repeat;
     background-attachment: local, local;
 }
 
 .statistics__table {
     width: 100%;
-    min-width: 600px;
+    min-width: 37.5rem;
     border-collapse: collapse;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 
 .statistics__header, .statistics__data {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .statistics__tbody .statistics__row:nth-child(odd) {
@@ -224,13 +224,13 @@
 .statistics__data--icon {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.3125rem;
 }
 
 .statistics__data--icon::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
@@ -257,16 +257,16 @@
     background-image: url("../imagem/alhilal.png");
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .statistics__header, 
     .statistics__data {
-        padding: 10px;
+        padding: 0.625rem;
         font-size: 0.9rem;
     }
 
     .statistics__title {
         font-size: 1.5rem;
-        padding: 0 10px;
+        padding: 0 0.625rem;
     }
 }
 
