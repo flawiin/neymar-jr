@@ -55,12 +55,26 @@
 
 .banner__title {
     color: #fff;
-    text-shadow: 2px 2px 5px #000000;
+    text-shadow: 3px 3px 5px #000000;
     margin-bottom: 30px;
     font-family: 'Ysabeau Infant', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.375rem;
     animation: fadeDown 1s ease forwards;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.banner__title::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 5px;
+    border-radius: 40px;
+    position: absolute;
+    top: 45px;
+    background: linear-gradient(135deg, #ffdf00, #009c3b);
+
 }
 
 .banner__title::after {
@@ -75,36 +89,38 @@
 }
 
 .banner__social-link {
-    width: 768px;
+    max-width: 768px;
+    width: 95%;
 }
 
 .social-link__item {
     list-style: none;
-    padding: 20px;
     text-align: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     margin: 20px 0;
     border-radius: 30px;
-    transition: all 0.3s ease;
+    max-width: 768px;
+    width: 100%;
 }
 
-.social-link__item:hover, .social-link__link:hover {
+.social-link__item:hover .social-link__link {
     background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-weight: bold;
 }
 
 .social-link__link {
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     font-family: 'Ysabeau Infant', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 1.125rem;
-    transition: all 0.3s ease;
-}
-
-.social-link__link:hover {
-    color: #000000;
-    background-color: transparent;
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+    position: relative;
+    padding-left: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .social-link__link::before {
@@ -112,47 +128,35 @@
     display: inline-block;
     width: 25px;
     height: 25px;
-    margin-right: 8px;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: middle;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .social-link__link--youtube::before {
     background-image: url("../imagem/youtube.png");
-    position: absolute;
-    right: 420px;
 }
 
 .social-link__link--instagram::before {
     background-image: url("../imagem/instagram.png");
-    position: absolute;
-    right: 400px;
 }
 
 .social-link__link--twitter::before {
     background-image: url("../imagem/twitter.png");
-    position: absolute;
-    right: 390px;
 }
 
 .social-link__link--facebook::before {
     background-image: url("../imagem/facebook.png");
-    position: absolute;
-    right: 400px;
 }
 
 .social-link__link--tiktok::before {
     background-image: url("../imagem/tiktok.png");
-    position: absolute;
-    right: 375px;
 }
 
 .social-link__link--twitch::before {
     background-image: url("../imagem/twitch.png");
-    position: absolute;
-    right: 393px;
 }
 
 .statistics {
@@ -179,9 +183,23 @@
     letter-spacing: 2px;
 }
 
+.statistics__table-wrapper {
+    max-width: 768px;
+    width: 95%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)), linear-gradient(to left, white 30%, rgba(255, 255, 255, 0)) 100% 0;
+    background-size: 50px 100%, 50px 100%;
+    background-repeat: no-repeat;
+    background-attachment: local, local;
+}
+
 .statistics__table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
     text-align: center;
-    border-spacing: 1;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -237,6 +255,19 @@
 
 .statistics__data--hilal::before {
     background-image: url("../imagem/alhilal.png");
+}
+
+@media (max-width: 768px) {
+    .statistics__header, 
+    .statistics__data {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .statistics__title {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
 }
 
 
